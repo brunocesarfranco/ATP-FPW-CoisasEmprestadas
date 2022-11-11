@@ -1,10 +1,8 @@
 /* ------------------------ IMPORTANDO FONTES ------------------------ */
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Londrina+Solid:wght@900&display=swap');
 
 /* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
-
 :root {
     --cor0: #fefe00;
     --cor1: #FFFFFF;
@@ -21,10 +19,7 @@
     --fonte-destaque2: 'Londrina Solid', cursive;
 }
 
-
 /* TELA LOGIN */
-
-
 #boxlog {
     display: flex;
 
@@ -61,7 +56,6 @@ p {
     margin: auto;
 }
 
-
 h1 {
     color: var(--cor5);
     font-family: var(--fonte-destaque2); 
@@ -79,7 +73,6 @@ h1 {
     margin: auto;
 
 }
-
 
 #container-login {
     padding: 10px;
@@ -160,17 +153,12 @@ input:hover {
     background-color: var(--cor3);
 }
 
-
-
-
-
 footer {
     display: flex;
     justify-content: end;
-    color: var(--cor5);
+    color: var(--cor6);
     font-size: large;
 }
-
 
 
 @media (max-width: 600px) {
@@ -234,5 +222,4 @@ footer {
         padding: 5px;
         border-radius: 15px;
     }
-
 }
