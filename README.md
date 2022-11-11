@@ -4,7 +4,7 @@ Projeto desenvolvido em PHP, HTML, CSS e MySQL para a matéria de Fundamentos de
 ### Infos
 - Universidade: PUCPR
 - Curso: Analise e Desenvolvimento de Sistemas
-- Disciplina: Métodos de Pesquisa e Ordenação em Estrutura de Dados
+- Disciplina: Fundamentos de Programação Web
 - Código-fonte: pasta [Fonte](https://github.com/brunocesarfranco/ATP-FPW-CoisasEmprestadas).
 
 ### Alunos Envolvidos
