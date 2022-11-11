@@ -9,3 +9,9 @@ Projeto desenvolvido em PHP, HTML, CSS e MySQL para a matéria de Fundamentos de
 
 ### Alunos Envolvidos
 - Bruno Cesar de Oliveira Franco
+
+### Techs   
+- PHP
+- HTML5
+- CSS3
+- MySQL
