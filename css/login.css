@@ -1,0 +1,238 @@
+/* ------------------------ IMPORTANDO FONTES ------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Londrina+Solid:wght@900&display=swap');
+
+/* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
+
+:root {
+    --cor0: #fefe00;
+    --cor1: #FFFFFF;
+    --cor2: #d1d1d1;
+    --cor3: #01eefe;
+    --cor4: #cfb9ff;
+    --cor5: #000000;
+    --cor6: #6035b8;
+
+    --fonte-padrao: 'Maven Pro', sans-serif;
+    --fonte-titulo: 'Bebas Neue', cursive;
+    --fonte-logo: 'Kaushan Script', cursive;
+    --fonte-destaque: 'Anton', sans-serif;
+    --fonte-destaque2: 'Londrina Solid', cursive;
+}
+
+
+/* TELA LOGIN */
+
+
+#boxlog {
+    display: flex;
+
+}
+
+#box1 {
+    width: 450px;
+    height: 550px;
+    border: 3px solid;
+    background-color: var(--cor3);
+}
+#box2 {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 450px;
+    height: 550px;
+    border: 3px solid;
+    background-color: var(--cor0);
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    background-image: url(../assets/img/bg6.gif);
+}
+
+body, ul {
+    margin: 0px;
+    padding: 40px;
+    padding-left: 100px;
+}
+
+p {
+    color: var(--cor5);
+    margin: auto;
+}
+
+
+h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-destaque2); 
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 60vh;
+    padding: 20px;
+    margin: auto;
+
+}
+
+
+#container-login {
+    padding: 10px;
+    min-width: 250px;
+    max-width: 450px;
+    margin: auto;
+}
+
+#container-login > div {
+    border-left: 3px solid black;
+    padding: 20px;
+}
+
+#containersection {
+    /* padding: 10px; */
+    min-width: 250px;
+    max-width: 450px;
+    /* margin: auto; */
+    z-index: 10;
+}
+
+#containersection > h1 {
+    font-size: 4.5rem;
+}
+#containersection > p {
+    font-size: 2rem;
+}
+
+input {
+    padding: 20px;
+    min-width: 13vw;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+input:hover {
+    background-color: #d3d3d3;
+}
+
+.campos {
+    border: none;
+    max-width: 20vw;
+
+}
+
+#btn-entrar {
+    width: 10vw;
+    margin: auto;
+    min-width: 100px;
+    color: var(--cor4);
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: var(--cor5);
+}
+
+#btn-entrar:hover {
+    color: var(--cor5);
+    background-color: var(--cor3);
+}
+
+
+#btn-cadastro {
+    width: 10vw;
+    margin: auto;
+    min-width: 100px;
+    color: var(--cor4);
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: var(--cor5);
+}
+
+#container-btn {
+    margin: auto;
+}
+
+#btn-cadastro:hover {
+    color: var(--cor5);
+    background-color: var(--cor3);
+}
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: end;
+    color: var(--cor5);
+    font-size: large;
+}
+
+
+
+@media (max-width: 600px) {
+    
+    body {
+        background-color: #263238;
+        margin: auto;
+        margin-right: 90px;
+    }
+
+    body, ul {
+        padding: 0px;
+    
+    }
+
+    h1 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #box1 {
+        width: 350px;
+        height: 550px;
+        border: 3px solid;
+        background-color: var(--cor3);
+    }
+    #box2 {
+        width: 350px;
+        margin-top: 25px;
+        margin-left: 25px;
+
+    }
+
+    #container-login {
+        margin: auto;
+    }
+
+    #container {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    #container > p {
+        display: none;
+    }
+
+    #container > h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    input {
+        padding: 0px;
+        min-width: 200px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+}

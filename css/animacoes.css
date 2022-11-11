@@ -1,0 +1,106 @@
+
+.anamation1 {
+    animation: animate 2s ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-800px);
+        color: #FFF;
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+        color: #000;
+    }
+}
+.anamation2 {
+    animation: animate2 2s ease-in-out forwards;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(-800px);
+        color: #FFF;
+    }
+
+    60% {
+        transform: translateX(0);
+    }
+
+    80% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+        color: #000;
+    }
+}
+.anamation3 {
+    animation: animate3 2s ease-in-out forwards;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateY(-800px);
+
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid blue;
+
+    animation: circle 2.5s ease-in-out;
+}
+
+@keyframes circle {
+    0% {
+        border-color: blue;
+        transform: scale(1);
+    }
+
+    25% {
+        border-color: green;
+        transform: scale(0.8);
+    }
+
+    50% {
+        border-color: purple;
+        transform: scale(1.15);
+    }
+
+    75% {
+        border-color: yellow;
+        transform: scale(0.7);
+    }
+
+    100% {
+        border-color: blue;
+        transform: scale(1);
+    }
+}

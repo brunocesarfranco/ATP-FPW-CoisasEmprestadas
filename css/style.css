@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+/* ------------------------ IMPORTANDO FONTES ------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Londrina+Solid:wght@900&display=swap');
+
+/* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
+
+:root {
+    --cor0: #fefe00;
+    --cor1: #FFFFFF;
+    --cor2: #d1d1d1;
+    --cor3: #01eefe;
+    --cor4: #cfb9ff;
+    --cor5: #000000;
+    --cor6: #6035b8;
+    --cor7: #7d2ae8; /* COR CANVA */
+    --cor8: #05bbcf; /* COR CANVA */
+    --cor9: linear-gradient(349deg, rgba(125,42,232,1) 0%, rgba(5,187,207,1) 98%);
+
+    --fonte-padrao: 'Maven Pro', sans-serif;
+    --fonte-titulo: 'Bebas Neue', cursive;
+    --fonte-logo: 'Kaushan Script', cursive;
+    --fonte-destaque: 'Anton', sans-serif;
+    --fonte-destaque2: 'Londrina Solid', cursive;
+}
+
+
+/* ------------------------ Config Gerais ------------------------ */
+
+body {
+    font-family: var(--fonte-padrao);
+
+    background-color: var(--cor1);
+}
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bgportifolio {
+    background-color: var(--cor2);
+}
+
+a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+/* ------------------------ Cabeçalho Estrutura Básica ------------------------ */
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor1);
+
+    box-shadow: 0px 2px 0px #6135b827;
+}
+
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem; /* Aplica um espaçamento especifico/determinado entre os itens */
+    
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+    font-family: var(--fonte-padrao);
+    color: var(--cor5);
+
+}
+
+#logo {
+    font-family: var(--fonte-destaque2);
+    font-size: 2rem;
+    color: var(--cor7);
+
+}
+
+/*------------------------ Esttrutura Mobile (hamburguer) ------------------------ */
+
+#btn-mobile {
+    display: none;
+}
+
+
+/*------------------------ LISTA DE EMPRESTIMOS ------------------------ */
+
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: -10px;
+}
+
+.item-lista {
+    display: inline-block;
+    justify-content: space-between;
+    min-width: 130px;
+    width: 20vw;
+    height: 30vh;
+    min-height: 190px;
+    padding: 20px;
+    margin: auto;
+    background-color: var(--cor7);  
+    margin: 20px;
+    
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.385);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    color: var(--cor1);
+}
+
+.item-lista:hover {
+    background: var(--cor3);
+    color: var(--cor5);
+}
+
+
+#titulo-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: var(--cor1);
+    font-size: 1.5rem;
+    width: 100vw;
+    height: 15vh;
+    background: var(--cor9);
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+
+.titulo-produto-lista {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--fonte-titulo);
+}
+
+
+/* ------------------------ PÁGINA CADASTRO ------------------------ */
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 70vh;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(75, 75, 75, 0.385);
+    
+    
+}
+
+.titulo-pag, h1 {
+    color: var(--cor3);
+    margin: auto;
+    padding: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+}
+label {
+    color: var(--cor0);
+    margin: auto;
+    padding: 20px;
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.campos {
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 5px;
+    width: 85vw;
+}
+
+#btn-cadastro {
+    width: 10vw;
+    margin: auto;
+    color: var(--cor5);
+    min-width: 100px;
+    font-size: 15px;
+    background: var(--cor8);
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 45vh;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #7c2ae8cd;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(75, 75, 75, 0.385);
+}
+
+
+.qdCadastro {
+    display: inline-block;
+    justify-content: space-between;
+    width: 25vw;
+    height: 30vh;
+    min-height: 120px;
+    padding: 20px;
+    margin: auto;
+    background-color: var(--cor7);  
+    margin: 20px;
+    
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.385);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    color: var(--cor1);
+}
+
+#quadro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+label {
+    color: var(--cor5);
+}
+.qdCadastro:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+section:hover > h1 {
+    color: var(--cor5);
+}
+
+.cadastro {
+    background-color: #7c2ae8cd;
+}
+
+
+
+
+/* ------------------------ FOOTER ------------------------ */
+
+
+
+
+/* ------------------------ Media Q ------------------------ */
+
+@media (max-width: 600px) {
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: var(--cor7);
+        transition: .6s; /* Part tempo animação */
+        z-index: 1000; /* Garanti que ele fique por cima */        
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    }
+
+    #user {
+        display: none;
+    }
+
+    /* Animação */
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0, .05);
+    }
+
+    /* Estilizando Botão */
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color:var(--cor7);        
+    }
+
+    #hamburguer {
+        border-top: 2px solidvar(--cor7);
+        width: 20px;
+    }
+
+    /*Pseudo Elementos */
+
+    #hamburguer::after,#hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color:var(--cor7); /* Usa o cor do #hambuerguer */
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+        
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
+
+        /* --------------- PÁGINA INICIO / LISTA --------------- */
+
+
+    #listaEmprestimos {
+        height: 60vh;
+        width: 75vw;
+        
+    }
+
+
+    /* --------------- PÁGINA CADASTRO --------------- */
+
+    .qdCadastro {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    #quadro {
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    /* --------------- LISTA EMPRESTIMO HOME --------------- */
+
+    .item-lista {
+        width: 80vw;
+    }
+
+
+}
