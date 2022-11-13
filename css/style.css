@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
 /* ------------------------ IMPORTANDO FONTES ------------------------ */
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Londrina+Solid:wght@900&display=swap');
 
-/* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
 
+/* ------------------------ CONFIGS PADRÃO PALETA DE CORES E FONTES ------------------------ */
 :root {
     --cor0: #fefe00;
     --cor1: #FFFFFF;
@@ -28,7 +27,6 @@
 
 
 /* ------------------------ Config Gerais ------------------------ */
-
 body {
     font-family: var(--fonte-padrao);
 
@@ -56,7 +54,6 @@ a:hover {
 
 
 /* ------------------------ Cabeçalho Estrutura Básica ------------------------ */
-
 #header {
     box-sizing: border-box;
     height: 70px;
@@ -68,7 +65,6 @@ a:hover {
 
     box-shadow: 0px 2px 0px #6135b827;
 }
-
 
 #menu {
     display: flex;
@@ -92,15 +88,14 @@ a:hover {
 
 }
 
-/*------------------------ Esttrutura Mobile (hamburguer) ------------------------ */
 
+/*------------------------ Esttrutura Mobile (hamburguer) ------------------------ */
 #btn-mobile {
     display: none;
 }
 
 
 /*------------------------ LISTA DE EMPRESTIMOS ------------------------ */
-
 #lista {
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +127,6 @@ a:hover {
     color: var(--cor5);
 }
 
-
 #titulo-lista {
     display: flex;
     justify-content: center;
@@ -146,8 +140,6 @@ a:hover {
     border-radius: 0px 0px 15px 15px;
 }
 
-
-
 .titulo-produto-lista {
     font-size: 2rem;
     font-weight: bold;
@@ -156,8 +148,6 @@ a:hover {
 
 
 /* ------------------------ PÁGINA CADASTRO ------------------------ */
-
-
 #container {
     display: flex;
     flex-direction: column;
@@ -169,8 +159,6 @@ a:hover {
     margin-top: 10px;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgba(75, 75, 75, 0.385);
-    
-    
 }
 
 .titulo-pag, h1 {
@@ -180,6 +168,7 @@ a:hover {
     font-family: var(--fonte-titulo);
     font-size: 2rem;
 }
+
 label {
     color: var(--cor0);
     margin: auto;
@@ -188,7 +177,6 @@ label {
     font-size: 1rem;
     font-weight: bold;
 }
-
 
 .campos {
     border: none;
@@ -220,7 +208,6 @@ label {
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgba(75, 75, 75, 0.385);
 }
-
 
 .qdCadastro {
     display: inline-block;
@@ -265,17 +252,12 @@ section:hover > h1 {
 }
 
 
-
-
 /* ------------------------ FOOTER ------------------------ */
 
 
 
-
 /* ------------------------ Media Q ------------------------ */
-
 @media (max-width: 600px) {
-
     #menu {
         display: block;
         position: absolute;
@@ -290,13 +272,11 @@ section:hover > h1 {
         overflow-y: hidden;
 
     }
-
     #user {
         display: none;
     }
 
     /* Animação */
-
     #nav.active #menu {
         height: calc(100vh - 70px);
         visibility: visible;
@@ -309,8 +289,8 @@ section:hover > h1 {
         border-bottom: 2px solid rgba(0,0,0, .05);
     }
 
-    /* Estilizando Botão */
 
+    /* Estilizando Botão */
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
@@ -327,8 +307,8 @@ section:hover > h1 {
         width: 20px;
     }
 
-    /*Pseudo Elementos */
 
+    /*Pseudo Elementos */
     #hamburguer::after,#hamburguer::before {
         content: '';
         display: block;
@@ -338,29 +318,23 @@ section:hover > h1 {
         margin-top: 5px;
         transition: .3s;
         position: relative;
-        
     }
 
     #nav.active #hamburguer {
         border-top-color: transparent;
-
     }
 
     #nav.active #hamburguer::before {
         transform: rotate(135deg);
-
     }
 
     #nav.active #hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
-
     }
-
-
-        /* --------------- PÁGINA INICIO / LISTA --------------- */
-
-
+        
+    
+    /* --------------- PÁGINA INICIO / LISTA --------------- */
     #listaEmprestimos {
         height: 60vh;
         width: 75vw;
@@ -369,7 +343,6 @@ section:hover > h1 {
 
 
     /* --------------- PÁGINA CADASTRO --------------- */
-
     .qdCadastro {
         width: 80vw;
         height: 30vh;
@@ -380,11 +353,9 @@ section:hover > h1 {
         margin: auto;
     }
     
-    /* --------------- LISTA EMPRESTIMO HOME --------------- */
 
+    /* --------------- LISTA EMPRESTIMO HOME --------------- */
     .item-lista {
         width: 80vw;
     }
-
-
 }

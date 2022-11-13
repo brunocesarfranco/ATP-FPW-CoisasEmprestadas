@@ -33,7 +33,7 @@
                 </ul>
             </nav>
              </header>
-
+             <p id="titulo-lista">PRODUTOS</p>
             <section id="quadro">
 
             <?php 

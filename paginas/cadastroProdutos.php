@@ -32,7 +32,6 @@
                 </ul>
             </nav>
              </header>
-
             <p id="titulo-lista">CADASTRO DE PRODUTOS</p>
             <section  class="produtos">
                 <form action="../config/funcoes.php" method="POST">
@@ -51,8 +50,6 @@
                 </form> 
             </section>
      </section>
-
      <script src="../js/navbar-js.js"></script>
-
 </body>
 </html>

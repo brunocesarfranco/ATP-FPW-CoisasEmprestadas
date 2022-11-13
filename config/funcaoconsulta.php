@@ -33,7 +33,4 @@
     } catch (Exception $e) {
         echo $e;
     }
-
-    
 ?>
-

@@ -2,7 +2,7 @@
 
     $hostname = "localhost";
     $username = "root";
-    $password = "root";
+    $password = "";
     $database = "coisas_emprestadas";
 
     $mysqli = new mysqli($hostname, $username, $password, $database);

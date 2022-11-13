@@ -32,9 +32,7 @@
                 </ul>
             </nav>
              </header>
-
             <p id="titulo-lista">CADASTRO DE USUÁRIOS</p>
-
             <section id="container" class="cadastro">
                 <form action="../config/salvarUsuario.php" method="post">
                     <label>Nome:</label>
@@ -45,7 +43,6 @@
                     <input class="campos" type="text" name="telefone" placeholder="Digite seu telefone...">
                     <label>Senha:</label>
                     <input class="campos" type="password" name="senha" placeholder="Digite seu senha...">
-            
                     <input class="campos" type="password" name="confirme_senha" placeholder="Confirme sua senha...">
                     <label>Endereço:</label>
                     <input class="campos" type="text" name="endereco" placeholder="Digite seu endereco...">
@@ -55,8 +52,6 @@
                 </form> 
             </section>
      </section>
-
      <script src="../js/navbar-js.js"></script>
-
 </body>
 </html>

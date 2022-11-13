@@ -46,21 +46,32 @@
     $user = $_SESSION['id'];
 
     
-    $sql1 = "SELECT nomeProduto, categoria, nomeUsuario, dataDev, idRegistro FROM produtos INNER JOIN emprestimos INNER JOIN usuarios WHERE emprestimos.idUsuario = usuarios.idUsuario and emprestimos.idProduto = produtos.idProduto ORDER BY emprestimos.idRegistro DESC";
+    $sql1 = "SELECT nomeProduto, categoria, nomeUsuario, dataDev, idRegistro 
+             FROM produtos 
+             INNER JOIN emprestimos 
+             INNER JOIN usuarios 
+             WHERE emprestimos.idUsuario = usuarios.idUsuario 
+             AND emprestimos.idProduto = produtos.idProduto 
+             ORDER BY emprestimos.idRegistro 
+             DESC";
     
-    $sql2 = "SELECT nomeProduto, categoria, nomeUsuario, dataDev, idRegistro FROM produtos INNER JOIN emprestimos INNER JOIN usuarios WHERE emprestimos.idUsuario = usuarios.idUsuario and emprestimos.idProduto = produtos.idProduto and emprestimos.idUsuario = $user ORDER BY emprestimos.idRegistro DESC";
+    $sql2 = "SELECT nomeProduto, categoria, nomeUsuario, dataDev, idRegistro 
+             FROM produtos 
+             INNER JOIN emprestimos 
+             INNER JOIN usuarios 
+             WHERE emprestimos.idUsuario = usuarios.idUsuario 
+             and emprestimos.idProduto = produtos.idProduto 
+             and emprestimos.idUsuario = $user 
+             ORDER BY emprestimos.idRegistro DESC";
     
     $sql_query = $mysqli->query($user == 1 ? $sql1 : $sql2) or die("ERRO ao consultar " . $mysqli->error);
 
 
-    
     if($sql_query->num_rows == 0) {
         echo "Nenhum resultado encontrado.";
     } else {
         while($dados = $sql_query->fetch_assoc()) {
             ?>
-
-            
                 <section class="item-lista">
                     <p class="titulo-produto-lista"><?php echo$dados['nomeProduto'] ?></p>
                     <div >
@@ -72,8 +83,6 @@
                         </form>
                     </div>
                 </section>
-            
-            
     <?php
         }
     };
