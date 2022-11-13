@@ -46,17 +46,17 @@ VALUES (
 
 INSERT INTO produtos(nomeProduto, categoria)
 VALUES ("Camisa", "Roupa"),
-    ("Caderno de Negocio", "Livro"),
-    ("X-box", "Eletronico");
+       ("Caderno de Negocio", "Livro"),
+       ("X-box", "Eletronico");
 
 INSERT INTO emprestimos(dataDev, idUsuario, idProduto)
-VALUES ("21-08-08", 1, 1),
-    ("21-08-08", 1, 2),
-    ("21-08-08", 1, 3);
+VALUES ("11-12-2022", 1, 1),
+       ("11-12-2022", 1, 2),
+       ("11-12-2022", 1, 3);
 
 INSERT INTO emprestimos(dataDev, idUsuario, idProduto)
-VALUES ("08-11-21", 2, 1),
-    ("19-10-21", 2, 2);
+VALUES ("11-12-2022", 2, 1),
+       ("11-12-2022", 2, 2);
 
 SELECT email, senha
 FROM usuarios
@@ -67,7 +67,8 @@ FROM produtos
 INNER JOIN emprestimos
 INNER JOIN usuarios
 WHERE emprestimos.idUsuario = usuarios.idUsuario
-    and emprestimos.idProduto = produtos.idProduto;
+AND emprestimos.idProduto = produtos.idProduto;
+
 SELECT *
 FROM emprestimos
 ORDER BY idRegistro DESC;
