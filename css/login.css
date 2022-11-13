@@ -156,8 +156,8 @@ input:hover {
 footer {
     display: flex;
     justify-content: end;
-    color: var(--cor6);
-    font-size: large;
+    color: var(--cor1);
+    font-size: 22px;
 }
 
 
