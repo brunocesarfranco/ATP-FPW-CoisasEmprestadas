@@ -9,7 +9,7 @@ include_once("./config/protect.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coisas Emprestadas</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" >
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animacoes.css">
 </head>
@@ -29,7 +29,7 @@ include_once("./config/protect.php");
                     <li><a href="./paginas/cadastro.php">Cadastro</a></li>
                     <li><a href="./paginas/produtos.php">Produtos</a></li>
                     <li><a href="./paginas/dashboard.php">Dashboard</a></li>
-                    <li><a href="./paginas/adm.php">Adminstrativo</a></li>
+                    <!-- <li><a href="./paginas/adm.php">Adminstrativo</a></li> -->
                     <li><a href="./config/logout.php">Sair</a></li>
                 </ul>
             </nav>
@@ -55,7 +55,7 @@ include_once("./config/protect.php");
                     <section class="item-lista">
                         <p class="titulo-produto-lista"><?php echo $dados['nomeProduto'] ?></p>
                         <div>
-                            <p>Dono: <?php echo $dados['nomeUsuario'] ?></p>
+                            <p>Emprestado de: <?php echo $dados['nomeUsuario'] ?></p>
                             <p>Data limite de Devolução: <?php echo $dados['dataDev'] ?></p>
                             <form action="./config/devolucao.php" method="post">
                                 <input type="hidden" name="idRegistro" value="<?php echo $dados['idRegistro'] ?>">

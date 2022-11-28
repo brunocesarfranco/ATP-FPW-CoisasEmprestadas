@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coisas Emprestadas</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animacoes.css">
 </head>
@@ -64,7 +64,7 @@
              and emprestimos.idUsuario = $user 
              ORDER BY emprestimos.idRegistro DESC";
     
-    $sql_query = $mysqli->query($user == 1 ? $sql1 : $sql2) or die("ERRO ao consultar " . $mysqli->error);
+    $sql_query = $mysqli -> query($user == 1 ? $sql1 : $sql2) or die("ERRO ao consultar " . $mysqli->error);
 
 
     if($sql_query->num_rows == 0) {

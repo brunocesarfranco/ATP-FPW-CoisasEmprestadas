@@ -11,6 +11,7 @@
     $date = $dataDevolucao->format('d/m/y');
     $user = $_SESSION['id'];
 
+    // Query select (lista produtos)
     $sql = "SELECT * FROM produtos WHERE nomeProduto = '$nome'";
     $sqlSave = $mysqli->prepare("INSERT INTO emprestimos(dataDev, idUsuario, idProduto) VALUES (?, ?, ?)");
 

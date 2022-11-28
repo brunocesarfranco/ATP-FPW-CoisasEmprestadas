@@ -4,6 +4,7 @@ include("conexao.php");
 $nomeProduto = $mysqli->real_escape_string($_POST['nomeProduto']);
 $categoria = $mysqli->real_escape_string($_POST['categoriaProduto']);
 
+// Query insert (Cria novos produtos)
 $sqlSave = $mysqli->prepare("INSERT INTO produtos(nomeProduto, categoria) VALUES (?, ?)");
 
 try {

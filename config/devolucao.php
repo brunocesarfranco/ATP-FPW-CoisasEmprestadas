@@ -4,6 +4,7 @@ include("conexao.php");
 
 $idRegistro = $_POST['idRegistro'];
 
+// Query delete (deleta produto)
 $sqlDevolucao = $mysqli->prepare("DELETE FROM emprestimos WHERE idRegistro = (?)");
 
 try {

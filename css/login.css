@@ -42,7 +42,8 @@
 
 body {
     font-family: 'Maven Pro', sans-serif;
-    background-image: url(../assets/img/bg6.gif);
+    background-image: url(../assets/img/bgpurple.gif);
+    background-size: auto 60%;
 }
 
 body, ul {
