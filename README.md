@@ -26,5 +26,6 @@ Projeto desenvolvido em PHP, HTML, CSS e MySQL para a matéria de Fundamentos de
     - SGBD  (qualquer com suporte a MySQL (MySQL Workbench, dBeaver))
         - Usada em desenvolvimento: MySQL Workbench [download](https://dev.mysql.com/downloads/workbench/)
     - Conexão banco de dados
-        - Configure o arquivo conexao.php apontando para sua base local 
+        - Configure o arquivo conexao.php apontando para sua base local
+        - Rode o script do arquivo "sql_inicial.php" para gerar seu banco de dados inicial
     
